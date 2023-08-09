@@ -20,3 +20,15 @@
             sucursalEmpleadoInput.value = data.sucursal_Empleado;
         }
     });
+    function actualizarcontraseña(){
+        document.getElementById("txtPassword").value = "";
+         Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+    }
+    
+   
