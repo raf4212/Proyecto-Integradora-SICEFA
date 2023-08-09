@@ -129,8 +129,8 @@ fetch("modules/moduloVentas/data_Ventas.json")
             return response.json();
         })
         .then(function(jsondata){
-                Ventas = jsondata;
-                console.log(Ventas);
+                ventas = jsondata;
+                console.log(ventas);
                 loadTabla();
             }            
         );

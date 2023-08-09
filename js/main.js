@@ -81,6 +81,26 @@ function cargarModuloProductos(){
                 }
             );
 }
+let moduloProductos1;
+
+function cargarModuloProductos1(){
+    fetch("modules/ModuloProductos/registroProductos_1.html")
+            .then(
+                function(response){
+                    return response.text();
+                }
+            )
+            .then(
+                function(html){
+                    document.getElementById("contenedorPrincipal").innerHTML = html;
+                    import ("../modules/ModuloProductos/controlador2.js").then(
+                            function(controller){
+                                moduloProductos1 = controller;
+                            }
+                            );
+                }
+            );
+}
 
 let moduloPedido;
 
