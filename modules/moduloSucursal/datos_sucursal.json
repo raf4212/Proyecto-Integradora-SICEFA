@@ -1,0 +1,77 @@
+[ 
+{
+        "codigo_sucursal": "", 
+        "nombre_sucursal": "Medicamos tu vida", 
+        "nombre_titular" : "Gil", 
+        "rfc_titular" : "234GIL829", 
+        "telefono_sucursal" : "477288192", 
+        "estado_sucursal" : "4770000123", 
+        "cp_sucursal" : "273980",
+        "ciudad_sucursal" : "leon", 
+        "domicilio_sucusal" : "Jardines de san juan",
+        "colonia": "Villas",
+        "latitud": "127.5",
+        "longitud": "1221.16"
+       
+    },
+    {
+        "codigo_sucursal": "", 
+        "nombre_sucursal": "sucursal 2", 
+        "nombre_titular" : "francisco", 
+        "rfc_titular" : "234FRAN829", 
+        "telefono_sucursal" : "477332432", 
+        "estado_sucursal" : "4770123456", 
+        "cp_sucursal" : "223213",
+        "ciudad_sucursal" : "leon", 
+        "domicilio_sucusal" : "20 de enero",
+        "colonia": "centro",
+        "latitud": "123.5",
+        "longitud": "121.16"
+       
+    },
+    {
+        "codigo_sucursal": "", 
+        "nombre_sucursal": "sucursal 3", 
+        "nombre_titular" : "Juan", 
+        "rfc_titular" : "214JUA111", 
+        "telefono_sucursal" : "4774455723", 
+        "estado_sucursal" : "4770001800", 
+        "cp_sucursal" : "445533",
+        "ciudad_sucursal" : "leon", 
+        "domicilio_sucusal" : "Santa maria",
+        "colonia": "piscina",
+        "latitud": "130.7",
+        "longitud": "222.122"
+       
+    },
+    {
+        "codigo_sucursal": "", 
+        "nombre_sucursal": "Sucursal 4", 
+        "nombre_titular" : "Fabian", 
+        "rfc_titular" : "656FAB899", 
+        "telefono_sucursal" : "4771944672", 
+        "estado_sucursal" : "4774656552", 
+        "cp_sucursal" : "122122",
+        "ciudad_sucursal" : "leon", 
+        "domicilio_sucusal" : "Portales",
+        "colonia": "Insurgentes",
+        "latitud": "155.5",
+        "longitud": "121.16"
+       
+    },
+    {
+        "codigo_sucursal": "", 
+        "nombre_sucursal": "Sucursal 5", 
+        "nombre_titular" : "Marcos", 
+        "rfc_titular" : "134MAR82V", 
+        "telefono_sucursal" : "477288192", 
+        "estado_sucursal" : "4770321142", 
+        "cp_sucursal" : "223223",
+        "ciudad_sucursal" : "leon", 
+        "domicilio_sucusal" : "Halondiga",
+        "colonia": "Hidalgo",
+        "latitud": "140.01",
+        "longitud": "3331.16"
+       
+    }
+    ]

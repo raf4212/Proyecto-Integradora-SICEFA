@@ -1,0 +1,30 @@
+[
+    {
+      "Usuario": "ADMS001",
+      "Contraseña": "ADMS001",
+      "nombre_Empleado": "John Doe",
+      "sucursal_Empleado": "Sucursal Central",
+         "codigo_empleado": "ADMS001"
+    },
+    {
+      "Usuario": "EMPL001",
+      "Contraseña": "EMPL001",
+      "nombre_Empleado": "Mary Jones",
+      "sucursal_Empleado": "Sucursal Norte",
+        "codigo_empleado": "EMPL001"
+    },
+    {
+      "Usuario": "ADMS002",
+      "Contraseña": "ADMS002",
+      "nombre_Empleado": "Alex Smith",
+      "sucursal_Empleado": "Sucursal Este",
+        "codigo_empleado": "EMPL003"
+    },
+    {
+      "Usuario": "rwilliams",
+      "Contraseña": "seguridad2023",
+      "nombre_Empleado": "Rachel Williams",
+      "sucursal_Empleado": "Sucursal Oeste",
+        "codigo_empleado": "EMPL004"
+    }
+]

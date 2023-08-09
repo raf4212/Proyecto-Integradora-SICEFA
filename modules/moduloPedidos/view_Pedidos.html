@@ -1,0 +1,59 @@
+<!-- Modulo de Pedidos -->
+<div class="container-fluid row d-flex justify-content-md-center" style="margin-top: 50px">
+    <div class="card col-lg-5 m-4 p-4">
+        <h2 class="text-center">Gestión de Pedidos</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="txtPedido" class="mt-2 ">id del Pedido</label>
+                <input id="txtPedido" type="text"  readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreCli" class="mt-2">Nombre Cliente:</label>
+                <input id="txtNombreCli" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreUsu" class="mt-2">Nombre Usuario</label>
+                <input id="txtNombreUsu" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreSucu" class="mt-2">Nombre Sucursal:</label>
+                <input id="txtNombreSucu" type="text"  class="mt-2">
+            </div>          
+            <div class="col-md-6">
+                <label for="txtPrecio" class="mt-2 col-12">Cantidad</label><br>
+                <input id="txtPrecio" type="number"  class="mt-2">
+            </div>
+           
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloPedido.addPedido();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloPedido.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg disabled" onclick="moduloPedido.updatePedido();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg disabled" onclick="moduloPedido.deletePedido();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+    </div>
+    <div class="card col-lg-6  p-4 m-4" style="margin-bottom: 10px">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaPedido" class="form-label mx-3">Buscar Pedido: </label>
+            <input type="text" id="txtBusquedaPedido">
+            <button class="btn btn-primary mx-2" onclick="moduloPedido.searchPedido();">Buscar</button>
+        </div>
+         <div class="table-container" style="overflow-x: auto; overflow-y: hidden; max-height: 2000px;">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id del Pedido</th>
+                    <th>Nombre Cliente</th>
+                    <th>Nombre Usuario</th>
+                    <th>Nombre Sucursal</th>
+                    <th>Precio</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblPedidos">
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>

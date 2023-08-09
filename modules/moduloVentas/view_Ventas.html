@@ -1,0 +1,69 @@
+<!-- Modulo de Ventas -->
+<div class="container-fluid row d-flex justify-content-md-center" style="margin-top: 50px">
+    <div class="card col-lg-5 m-4 p-4">
+        <h2 class="text-center">Gestión de Pedidos</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="txtVentas" class="mt-2 ">id Ventas</label>
+                <input id="txtVentas" type="text"  readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtProdVen" class="mt-2">Productos Vendidos:</label>
+                <input id="txtProdVen" type="number"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtRealizo" class="mt-2">Empleado Realizo la venta:</label>
+                <input id="txtRealizo" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCantidad" class="mt-2">Cantidad:</label>
+                <input id="txtCantidad" type="number"  class="mt-2">
+            </div>          
+            <div class="col-md-6">
+                <label for="txtFecha" class="mt-2">Fecha:</label>
+                <input id="txtFecha" type="date"  class="mt-2">
+            </div>         
+            <div class="col-md-6">
+                <label for="txtHora" class="mt-2">Hora:</label>
+                <input id="txtHora" type="time"  class="mt-2">
+            </div>         
+            <div class="col-md-6">
+                <label for="txtUnitario" class="mt-2 col-12">Precio Unitario:</label><br>
+                <input id="txtUnitario" type="text"  class="mt-2">
+            </div>
+           
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloVentas.addVentas();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloVentas.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg disabled" onclick="moduloVentas.updateVenta();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg disabled" onclick="moduloVentas.deleteVenta();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+    </div>
+    <div class="card col-lg-6  p-4 m-4" style="margin-bottom: 10px">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaVentas" class="form-label mx-3">Buscar Pedido: </label>
+            <input type="text" id="txtBusquedaVentas">
+            <button class="btn btn-primary mx-2" onclick="moduloVentas.searchVenta();">Buscar</button>
+        </div>
+         <div class="table-container" style="overflow-x: auto; overflow-y: hidden; max-height: 2000px;">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id Ventas</th>
+                    <th>Productos Vendidos</th>
+                    <th>Empleado Realizo la Venta</th>
+                    <th>Cantidad</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Precio Unitario</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblVentas">
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>

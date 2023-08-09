@@ -1,0 +1,14 @@
+
+.navHover:hover{
+    color: #0093c4;
+    font-size: large;
+    cursor: pointer;
+}
+
+.table-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-height: 300px; 
+    }
+    
+    

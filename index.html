@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Medicamos tu vida S.A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Cristian Estrada">
+        <meta name="date" content="11/07/2022">
+        <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+        <link href="style/estiloindex.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="col-auto text-center align-items-center" id="contenedorPrincipal">
+        <h1 class="title">Bienvenido a SICEFA</h1><br>
+        <div class="row">
+        <div class ="container-fluid col-4">
+            <div class ="row">
+                <form>
+                    <div class="marco">
+                        <h1 class="title">Inicio de Sesión:</h1>
+                        <label class="user" for ="txtUser">Usuario</label>
+                        <input type="text" id="txtUser" name="txtUser"><br> 
+                        <label class="user" for ="txtPassword">Contraseña</label>
+                        <input type="text" id="txtPassword" name="txtPassword"><br>
+                        <button type ="button" onclick="validar();">Ingresar</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+        <div class ="container-fluid col-4">
+            <div class ="row">
+                <form>
+                    <div class="marco">
+                        <h1 class="title">Mision Empresa:</h1>
+                        <button type ="button" onclick="informacionEmpresa2();">
+                            <img src="img/4861101.png" alt="Imagen Botón" style="width: 240px"></button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+       <div class ="container-fluid col-4">
+            <div class ="row">
+                <form>
+                    <div class="marco">
+                        <h1 class="title">Mision Empresa:</h1>
+                        <button type ="button" onclick="informacionEmpresa1();">
+                            <img src="img/3081516.png" alt="Imagen Botón" style="width: 240px"></button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        <script src="js/login.js" type="text/javascript"></script>
+        <script src="style/js/bootstrap.bundle.js"></script>
+        <script src="style/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+       
+    </body>
+</html>

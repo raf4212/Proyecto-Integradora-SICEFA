@@ -1,0 +1,32 @@
+[
+  {
+    "nombreProducto": "Ibuprofeno",
+    "nombreGenerico": "Ibuprofeno",
+    "formaFarmaceutica": "Tableta",
+    "unidadMedida": "mg",
+    "presentacion": "20 tabletas",
+    "principalIndicacion": "Alivio del dolor y la inflamación",
+    "contraindicaciones": "Alergia al ibuprofeno",
+    "concentracion": "400",
+    "unidadesEnvase": "1",
+    "precioUnitario": "5.99",
+    "codigoBarras": "1234567890",
+    "rutaImagen": "ruta/imagen1.jpg",
+    "estatus": "Activo"
+  },
+  {
+    "nombreProducto": "Paracetamol",
+    "nombreGenerico": "Paracetamol",
+    "formaFarmaceutica": "Tableta",
+    "unidadMedida": "mg",
+    "presentacion": "10 tabletas",
+    "principalIndicacion": "Alivio del dolor y la fiebre",
+    "contraindicaciones": "Enfermedad hepática",
+    "concentracion": "500",
+    "unidadesEnvase": "1",
+    "precioUnitario": "3.49",
+    "codigoBarras": "9876543210",
+    "rutaImagen": "ruta/imagen2.jpg",
+    "estatus": "Activo"
+  }
+]

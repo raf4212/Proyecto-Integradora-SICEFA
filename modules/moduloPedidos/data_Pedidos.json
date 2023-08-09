@@ -1,0 +1,44 @@
+[    
+    {
+        "id_Pedido": "01", 
+        "nombre_cliente": "Juan Daniel",
+        "nombre_usuario": "J. Daniel",
+        "nom_sucursal": "Medicamos tu vida S.A",
+        "precio":"15",
+        "estatus":"Atendido"
+    },
+      
+    {
+        "id_Pedido": "02", 
+        "nombre_cliente": "Irma Nohemi",
+        "nombre_usuario": "I. Nohemi ",
+        "nom_sucursal": "Medicamos tu vida S.A",
+        "precio":"52",
+        "estatus":"Atendido"
+    },
+    {
+       "id_Pedido": "03", 
+        "nombre_cliente": "Claudio Reynaldo",
+        "nombre_usuario": "C. Reynaldo ",
+        "nom_sucursal": "Medicamos tu vida S.A",
+        "precio":"87",
+        "estatus":"Atendido"
+    },
+    {
+       "id_Pedido": "04", 
+        "nombre_cliente": "Sayra Berenice",
+        "nombre_usuario": "S. Berenice ",
+        "nom_sucursal": "Medicamos tu vida S.A",
+        "precio":"50",
+        "estatus":"Atendido"
+    },
+     {
+       "id_Pedido": "05", 
+        "nombre_cliente": "Estrella Valentina",
+        "nombre_usuario": "E. Valentina",
+        "nom_sucursal": "Medicamos tu vida S.A",
+        "precio":"28",
+        "estatus":"Atendido"
+    }
+
+]

@@ -1,0 +1,152 @@
+<!-- Modulo de empelados -->
+<div class="container-fluid row d-flex justify-content-md-center" style="margin-top: 50px">
+    <div class="card col-lg-5 m-4 p-4">
+        <h2 class="text-center">Gestión de Empleados</h2>
+        <div class="row g-3">
+            
+                <div class="col-md-6">
+                <label for="txtCodigoEmpleado" class="mt-2">Código Empleado:</label>
+                <input id="txtCodigoEmpleado" type="text" readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtUsuario" class="mt-2">Usuario del Empleado:</label>
+                <input id="txtUsuario" type="text" readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombreEmpl" class="mt-2">Nombre(s):</label>
+                <input id="txtNombreEmpl" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtApellP" class="mt-2">Apellido Paterno:</label>
+                <input id="txtApellP" type="text" class="mt-2" required>
+                
+            </div>
+            <div class="col-md-6">
+                <label for="txtApellM" class="mt-2">Apellido Materno:</label>
+                <input id="txtApellM" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label class="mt-2">Género:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtGenero" name="txtGenero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="txtRfc" class="mt-2 col-12">RFC:</label><br>
+                <input id="txtRfc" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtTelefono" class="mt-2">Teléfono Fijo:</label>
+                <input id="txtTelefono" type="text" class="mt-2 required">
+            </div>
+            <div class="col-md-6">
+                <label for="txtMovil" class="mt-2">Teléfono Móvil:</label>
+                <input id="txtMovil" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCorreo" class="mt-2">Correo Electrónico:</label>
+                <input id="txtCorreo" type="text" class="mt-2" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="txtFechaNacimiento" class="mt-2">Fecha de Nacimiento:</label>
+                <input id="txtFechaNacimiento" type="date" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCurp" class="mt-2">CURP:</label>
+                <input id="txtCurp" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtDomicilio" class="mt-2">Domicilio:</label>
+                <input id="txtDomicilio" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCiudad" class="mt-2">Ciudad:</label>
+                <input id="txtCiudad" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtEstado" class="mt-2">Estado:</label>
+                <input id="txtEstado" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtCodigoPostal" class="mt-2">Código Postal:</label>
+                <input id="txtCodigoPostal" type="text" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtFechaIngreso" class="mt-2">Fecha de Ingreso:</label>
+                <input id="txtFechaIngreso" type="date" class="mt-2" required>
+            </div>
+            <div class="col-md-6">
+                <label for="txtPuestoLaboral" class="mt-2">Puesto Laboral:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtPuestoLaboral" name="txtPuestoLaboral">
+                    <option value="Gerente">Gerente</option>
+                    <option value="Atención a Cliente">Atención a Cliente</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtSalarioMensual" class="mt-2">Salario Mensual:</label>
+                <input id="txtSalarioMensual" type="text" class="mt-2" required>
+            </div>
+            
+                <div class="col-md-6">
+                <label for="txtSucursalEmpleado" class="mt-2">Sucursal Empleado:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtSucursalEmpleado" name="txtSucursalEmpleado">
+                    <option value="Sucursal-Central">Sucursal-Central</option>
+                    <option value="Sucursal-Centro-Max">Sucursal-Centro-Max</option>
+                    <option value="Sucursal-Centro">Sucursal-Centro</option>
+                    <option value="Sucursal-Plaza-Mayor">Sucursal-Plaza-Mayor</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloEmpleado.añadirEmpl();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloEmpleado.limpiar();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg disabled" onclick="moduloEmpleado.actualizarEmpl();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg disabled" onclick="moduloEmpleado.eliminarEmpl();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+    
+    
+    
+    <div class="card col-lg-6 p-4 m-4" style="margin-bottom: 10px">
+    <div class="d-flex m-3">
+        <label for="txtBusquedaEmpleado" class="form-label mx-3">Buscar Empleado </label>
+        <input type="text" id="txtBusquedaEmpleado">
+        <button class="btn btn-primary mx-2" onclick="moduloEmpleado.buscarEmpl();">Buscar</button>
+    </div>
+    <div class="table-container" style="overflow-x: auto; overflow-y: hidden; max-height: 2000px;">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Codigo Empleado</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Género</th>
+                    <th>Teléfono Movil</th>
+                     <td>Teléfono Fijo</td>
+                    <th>Estátus</th>
+                    <th>RFC</th>
+                    <th> Correo</th>
+                    <th>Fecha Nacimiento</th>
+                    <th> CURP</th>
+                    <th>Domicilio</th>
+                    <th>Ciudad</th>
+                    <th>Estado</th>
+                    <th>Codigo Postal</th>
+                    <th>Fecha de Ingreso</th>
+                    <th>Puesto Laboral</th>
+                    <th>Salario</th>
+                    <th>Usuario</th>
+                    <th>Sucursal</th>
+                </tr>
+            </thead>
+            <tbody id="tblEmpleado">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,151 @@
+<!-- Modulo de clientes -->
+<div class="container-fluid row d-flex justify-content-md-center" style="margin-top: 50px">
+    <div class="card col-lg-5 m-4 p-4">
+        <h2 class="text-center">Gestión de Clientes</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+            <label for="txtid" class="mt-2 ">id del Cliente</label>
+                <input id="txtid" type="text"  readonly class="mt-2">
+            </div>
+             <div class="col-md-6">
+                <label for="txtcodigo" class="mt-2 ">Código del Cliente</label>
+                <input id="txtcodigo" type="text" readonly class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtNombre" class="mt-2">Nombre(s):</label>
+                <input id="txtNombre" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtApePaterno" class="mt-2">Apellido Paterno:</label>
+                <input id="txtApePaterno" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtApeMaterno" class="mt-2">Apellido Materno:</label>
+                <input id="txtApeMaterno" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtRfc" class="mt-2 col-12">RFC:</label><br>
+                <input id="txtRfc" type="text"  class="mt-2">
+            </div>
+             <div class="col-md-6">
+                <label for="txtCurp" class="mt-2">Curp:</label>
+                <input id="txtCurp" type="text"  class="mt-2">
+            </div>
+         <div class="col-md-6">
+                <label class="mt-2">Género:</label>
+                <select class="form-select form-select-sm col-md-6" id="txtGenero" name="txtGenero">
+                    <option value="Masculino" >Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="txtTelefono" class="mt-2">Teléfono:</label>
+                <input id="txtTelefono" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6>
+                 <label for="lstEstado">Estado</label><br>
+                    <select id="lstEstado">
+                        <option value="AS">Aguacalientes</option>
+                        <option value="BC">Baja California</option>
+                        <option value="BS">Baja California Sur</option>
+                        <option value="CC">Campeche</option>
+                        <option value="CL">Coahuila</option>
+                        <option value="CM">Colima</option>     
+                        <option value="CS">Chiapas</option> 
+                        <option value="CH">Chihuahua</option> 
+                        <option value="DF">Distrito Federal</option> 
+                        <option value="DG">Durango</option> 
+                        <option value="GT">Guanajuato</option>
+                        <option value="GR">Guerrero</option>
+                        <option value="HG">Hidalgo</option>
+                        <option value="JC">Jalisco</option>
+                        <option value="MC">Mexico</option>
+                        <option value="MN">Michoacan</option>
+                        <option value="MS">Morelos</option>
+                        <option value="NT">Nayarit</option>
+                        <option value="NL">Nuevo León</option>
+                        <option value="OC">Oaxaca</option>
+                        <option value="PL">Puebla</option>
+                        <option value="QT">Queretaro</option>
+                        <option value="QT">Quintana Roo</option>
+                        <option value="SP">San Luis Potosí</option>
+                        <option value="SL">Sinaloa</option>
+                        <option value="SR">Sonora</option>
+                        <option value="TC">Tabasco</option>
+                        <option value="TS">Tamaulipas</option>
+                        <option value="TL">Tlaxcala</option>
+                        <option value="VZ">Veracruz</option>
+                        <option value="YN">Yucatán</option>
+                        <option value="ZS">Zacatecas</option>
+                        <option value="NE">Nacionalidad Extranjera</option>
+                    </select>
+            </div>
+        
+                  <div class="col-md-6">
+                <label for="txtCiudad" class="mt-2">Ciudad:</label>
+                <input id="txtCiudad" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtCorreo" class="mt-2">Correo Electrónico:</label>
+                <input id="txtCorreo" type="text"  class="mt-2">
+            </div>
+             <div class="col-md-6">
+                <label for="txtDomicilio" class="mt-2">Domicilio:</label>
+                <input id="txtDomicilio" type="text"  class="mt-2">
+            </div>
+            <div class="col-md-6">
+                <label for="txtFechaNac" class="mt-2">Fecha de nacimiento:</label>
+                <input id="txtFechaNac" type="date"  class="mt-2">
+            </div>
+              <div class="col-md-6">
+                <label for="txtCodigoPostal" class="mt-2">Codigo Postal:</label>
+                <input id="txtCodigoPostal" type="text"  class="mt-2">
+            </div>
+             <div class="col-md-6">
+                <label for="txtFechaRegistro" class="mt-2">Fecha Registro:</label>
+                <input id="txtFechaRegistro" type="Date"  class="mt-2">
+            </div>
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-success btn-lg" onclick="moduloCliente.addCliente();" id="btnAdd">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloCliente.clean();" id="btnClean">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg disabled" onclick="moduloCliente.updateCliente();" id="btnUpdate">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg disabled" onclick="moduloCliente.deleteCliente();" id="btnDelete">Eliminar</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="card col-lg-6  p-4 m-4" style="margin-bottom: 10px">
+        <div class="d-flex m-3">
+            <label for="txtBusquedaCliente" class="form-label mx-3">Buscar Cliente: </label>
+            <input type="text" id="txtBusquedaCliente">
+            <button class="btn btn-primary mx-2" onclick="moduloCliente.searchCliente();">Buscar</button>
+        </div>
+         <div class="table-container" style="overflow-x: auto; overflow-y: hidden; max-height: 2000px;">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+            <th>Codigo cliente</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>    
+          <th>Género</th>
+          <th>RFC</th>
+          <th>Curp</th>
+          <th>Teléfono</th>
+          <th>Fecha de nacimiento</th>
+          <th>Ciudad</th>
+          <th>Domicilio</th>
+          <th>Estado</th>
+          <th>Codigo Postal</th>
+          <th>Email</th>
+          <th>Fecha Registro</th>
+          <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody id="tblClientes">
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
